@@ -51,7 +51,21 @@ This Blog Application serves as a minimal social media platform that allows:
 | **Security** | JWT, Bcrypt |
 | **Deployment** | Localhost (`uvicorn` + `npm start`) |
 
----
+**---requirements.txt**
+
+fastapi
+uvicorn
+sqlalchemy
+pydantic
+passlib[bcrypt]
+python-jose
+
+
+**Run with specific host and port**
+uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+
+**Run the FastAPI Server (development mode)**
+uvicorn main:app --reload
 
 
 
